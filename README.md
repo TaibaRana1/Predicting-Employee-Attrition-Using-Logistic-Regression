@@ -9,16 +9,16 @@ Evaluation: Assess model using accuracy, precision, recall, F1-score, and a conf
 Actionable Insights: Provide data-driven suggestions to help reduce employee churn.
 
 ## ⚙️ Data Preprocessing
-✅ No missing values detected, but checks were performed.
-🔁 One-Hot Encoding applied to categorical columns.
-📉 Outliers handled using the IQR method.
-🗑️ Dropped constant or irrelevant columns: EmployeeCount, EmployeeNumber, Over18, StandardHours.
++  No missing values detected, but checks were performed.
+ +    One-Hot Encoding applied to categorical columns.
+  +   Outliers handled using the IQR method.
++     Dropped constant or irrelevant columns: EmployeeCount, EmployeeNumber, Over18, StandardHours.
 
 ## 📊 Exploratory Data Analysis (EDA)
-High Attrition Rate: Most employees have left (1200+), vs ~250 who stayed.
-By Age: Peak attrition between ages 28–32.
-By Income: Higher attrition in employees earning ₹2000–₹3000. Lower in high-income groups.
-By Gender: Male attrition ≈ 1.7x female attrition.
+   High Attrition Rate: Most employees have left (1200+), vs ~250 who stayed.
+   By Age: Peak attrition between ages 28–32.
+   By Income: Higher attrition in employees earning ₹2000–₹3000. Lower in high-income groups.
+   By Gender: Male attrition ≈ 1.7x female attrition.
 
 ## 🧪 Feature Engineering
 loyalty_ratio = YearsAtCompany / (TotalWorkingYears + 1)
@@ -36,5 +36,5 @@ TN: 184, FP: 71, FN: 13, TP: 26
 
 ➡️ The model performs well for majority class (non-leavers), but struggles with precision for minority class (leavers), likely due to class imbalance.
 
-## 📌 Tools Used
+## Tools Used
 Python, Pandas, Seaborn, Plotly, Scikit-learn
