@@ -25,16 +25,6 @@ loyalty_ratio = YearsAtCompany / (TotalWorkingYears + 1)
 promotion_delay_ratio = YearsSinceLastPromotion / (YearsAtCompany + 1) (capped at 5)
 normalized_income = MonthlyIncome / (JobLevel + 1) (capped at 20,000)
 
-##  Model Performance
-Accuracy: 71.4%
-Precision / Recall / F1 (Class 1 - Attrition):
-Precision: 0.27
-Recall: 0.67
-F1-Score: 0.38
-Confusion Matrix:
-TN: 184, FP: 71, FN: 13, TP: 26
-
-➡ The model performs well for majority class (non-leavers), but struggles with precision for minority class (leavers), likely due to class imbalance.
 
 ## Tools Used
 Python, Pandas, Seaborn, Plotly, Scikit-learn
